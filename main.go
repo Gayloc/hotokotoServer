@@ -9,11 +9,11 @@ import (
 
 func main() {
 	database := hitokoto.DataBase{}
-	file, err := os.ReadFile("hitokoto.json")
+	file, err := os.ReadFile("hitokoto.json") //读取本地文件
 	if err != nil {
 		panic(err)
 	}
-	err = json.Unmarshal(file, &database)
+	err = json.Unmarshal(file, &database) //反序列化
 	if err != nil {
 		panic(err)
 	}
