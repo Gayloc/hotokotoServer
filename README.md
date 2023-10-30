@@ -32,6 +32,7 @@
 }
 ```
 ## 获取数据
+> 获取数据无需鉴权
 ### 获取全部数据
 接口:`http://<hostname>:8080/`<br/>
 方法:`GET`<br/>
@@ -212,4 +213,4 @@
 }
 ```
 ## 说明
-首次运行或`hitokoto.json`被删除时会根据`DefaultDatabase.json`文件自动生成默认的`hitokoto.json`文件。
+> 首次运行或`hitokoto.json`被删除时会根据`DefaultDatabase.json`文件自动生成默认的`hitokoto.json`文件。
