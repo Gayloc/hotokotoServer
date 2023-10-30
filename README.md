@@ -5,7 +5,7 @@
 ### 鉴权方法
 在请求头中添加`Authorization:Bearer <token>`
 ## 获取Token
-接口:`http://host:8080/auth`<br/>
+接口:`http://<hostname>:8080/auth`<br/>
 方法:`POST`<br/>
 请求体类型:`application/json`<br/>
 #### 请求示例
@@ -33,7 +33,7 @@
 ```
 ## 获取数据
 ### 获取全部数据
-接口:`http://host:8080/`<br/>
+接口:`http://<hostname>:8080/`<br/>
 方法:`GET`<br/>
 #### 返回示例
 ```json
@@ -83,10 +83,10 @@
 }
 ```
 ### 按类型获取数据
-接口:`http://host:8080/`<br/>
+接口:`http://<hostname>:8080/`<br/>
 参数:`type:string`要获取数据的类型<br/>
 方法:`GET`<br/>
-请求示例:`http://host:8080/?type=1`<br/>
+请求示例:`http://<hostname>:8080/?type=1`<br/>
 #### 返回示例
 ```json
 {
@@ -111,7 +111,7 @@
 }
 ```
 ## 添加数据
-接口:`http://host:8080/`<br/>
+接口:`http://<hostname>:8080/`<br/>
 方法:`POST`<br/>
 请求体类型:`application/json`<br/>
 #### 请求示例
@@ -150,7 +150,7 @@
 }
 ```
 ## 删除数据
-接口:`http://host:8080/`<br/>
+接口:`http://<hostname>:8080/`<br/>
 参数:`id:int`要删除数据的id<br/>
 方法:`DELETE`<br/>
 请求体类型:`application/json`<br/>
@@ -171,7 +171,7 @@
 }
 ```
 ## 修改数据
-接口:`http://host:8080/`<br/>
+接口:`http://<hostname>:8080/`<br/>
 参数:`id:int`要修改数据的id<br/>
 方法:`PUT`<br/>
 请求体类型:`application/json`<br/>
