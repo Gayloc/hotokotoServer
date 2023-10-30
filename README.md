@@ -84,7 +84,10 @@
 ```
 ### 按类型获取数据
 接口:`http://<hostname>:8080/`<br/>
-参数:`type:string`要获取数据的类型<br/>
+参数:`type`<br/>
+- 类型:`string`<br/>
+- 说明:要获取数据的类型<br/>
+
 方法:`GET`<br/>
 请求示例:`http://<hostname>:8080/?type=1`<br/>
 #### 返回示例
@@ -151,7 +154,10 @@
 ```
 ## 删除数据
 接口:`http://<hostname>:8080/`<br/>
-参数:`id:int`要删除数据的id<br/>
+参数:`id`<br/>
+- 类型:`int`<br/>
+- 说明:要删除数据的id<br/>
+
 方法:`DELETE`<br/>
 请求体类型:`application/json`<br/>
 > 手动设定的`id`重复则删除第一个
@@ -172,7 +178,10 @@
 ```
 ## 修改数据
 接口:`http://<hostname>:8080/`<br/>
-参数:`id:int`要修改数据的id<br/>
+参数:`id`<br/>
+- 类型:`int`<br/>
+- 说明:要修改数据的id<br/>
+
 方法:`PUT`<br/>
 请求体类型:`application/json`<br/>
 > 手动设定的`id`重复则修改第一个
