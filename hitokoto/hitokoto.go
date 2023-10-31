@@ -39,7 +39,7 @@ func (d *DataBase) AddItem(hitokoto Hitokoto) bool {
 		if len(d.Data) > 0 {
 			hitokoto.Id = d.Data[len(d.Data)-1].Id + 1
 		} else {
-			hitokoto.Id = 0
+			hitokoto.Id = 1
 		}
 	}
 	if hitokoto.Length == 0 {
